@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hello Programmers</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+        <!--   CSS file included -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="downloadstyle.css">
+        
+        <!-- cdn for fontawesome -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <!-- Using flat icons -->
+        <link rel="stylesheet" type="text/css" href="font/flaticon.css">
+        <!-- FAVICONS ICON -->
+        <link rel="icon" type="image/png" href="images/logo2.png"/>
+        <!-- jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- for owl carasoul -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- /*=================Navbar Section Started===============
+        ======================================================*/ -->
+        <nav>
+            <div class="logo">
+                <img src="images/logo2.png">
+            </div>
+            
+            <div class="nav-menus">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html#myservices">Services</a></li>
+                    <li><a href="index.html#gotoabout">About Us</a></li>
+                    <li><a href="csit.html">Bsc.CSIT</a></li>
+                    <li><a href="beit.html">BE.IT</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li id="bookimg"><img src="images/books.png"></li>
+                    <li id="design"><!-- this is for just design at last of nav --></li>
+            </ul>
+        </div>
+        
+        <!-- for responsive side nav menu -->
+        <div class="sidenav-menus" id="sidenav">
+            <span onclick="closeNav()">&#9747;</span> <!-- Close or sross sign -->
+            <div class="logo2">
+                <img src="images/logo2.png">
+            </div>
+            
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#myservices"><i class="fas fa-hands-helping"></i> Services</a></li>
+                <li><a href="index.html#gotoabout"><i class="fas fa-address-card"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> IT-Courses <i class="fas fa-caret-down" id="arodown"></></i> </a>
+                <ul>
+                    <li><a href="csit.html">Bsc.CSIT</a></li>
+                    <li><a href="beit.html">BE.IT</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#team"><i class="fas fa-users"></i> Team</a></li>
+        </ul>
+        <div class="sidicn">
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <span id="bars" onclick="openNav()">&#9776;</span> <!-- for side bars to show menu on click -->
+</nav>
+<!-- /*=================Navbar Section Ends=============== -->
+<!-- ======================================================================
+====================Download Notes Section Stars====================== -->
+<section class="download" onclick="closeNav()">
+    <div class="container-fluid p-5">
+        <header>
+         <div class="container">
+            <div class="pb-4 text-center">
+            <h4>Download Bsc.CSIT full Syllabus:</h4>
+            <a href="https://drive.google.com/file/d/1Ly6XP7AxWYrYqfUrfxMsMBK-6Q6-t0y4/view?usp=sharing"><button class="btn btn-primary">Download</button></a>
+           </div>
+
+           <div class="pb-4 text-center">
+            <h4>Download BE.IT full Syllabus:</h4>
+            <a href="https://drive.google.com/file/d/1dqJDeg4kKDB2-9BuHn2BpGPd4Taogn1u/view?usp=sharing"><button class="btn btn-primary">Download</button></a>
+           </div>
+         </div>
+
+         <div class="pb-4 text-center">
+            <h4>Download Bsc.CSIT Entrance Model Sets:</h4>
+            <a href="https://drive.google.com/drive/folders/10VvwfKj_mIjp_dhCC_w7RPG6Z8On0J-M?usp=sharing"><button class="btn btn-primary">Download</button></a>
+        </div>
+
+
+            <h2>Download Notes</h2>
+            <p>Currently we provide notes for Bsc.CSIT and BE.IT.Select Your Category and Generate related links
+            from below to dwonload notes.</p>
+        </header>
+
+        <div class="row px-3 d-inline-block">
+            <div class="courseSelect">
+                <h5>Select Course:&ensp;</h5>
+                <select id="courseS" onchange="corseSelect();">
+                    <option>Select</option>
+                    <option id="csit">Bsc.CSIT</option>
+                    <option id="beit">BE.IT</option>
+                </select>
+            </div>
+            
+            <div class="mt-5 semSelect">
+                <h5>Select Semester:&ensp;</h5>
+                <select id="semS" onchange="semSelect();">
+                    <option>Select</option>
+                    <option>First</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                    <option>Fourth</option>
+                    <option>Fifth</option>
+                    <option>Sixth</option>
+                    <option>Seventh</option>
+                    <option>Eighth</option>
+                </select>
+            </div>
+            
+            <div class="linkgenerate mt-5">
+                <h5>Generate Links</h5>
+                <button class="btn-primary px-4 py-1" onclick="generateLinks();">Generate</button>
+                
+                <div id="csitLinks">
+                    <div id="link1">
+                        <h6 class="pt-4">Sem-1 csit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1-2mwUNOc6kaRIrfEX3VbPKRIkac4VWB3?usp=sharing">Books</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1-37abj4eDcOV7gr-koG67j2VGV7FJmKw?usp=sharing">Micro-Syllabus</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1-cQ-1zQ7uJFAeMobsw-MzCWNyOQzQUcE?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1-2mwUNOc6kaRIrfEX3VbPKRIkac4VWB3?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link2">
+                        <h6 class="pt-4">Sem-2 csit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1j-qm4lDEkxS8Brf_flkfQkounLehD43i?usp=sharing">Books</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1VJNpOMpn67q2vCGkkiKiOv_Bsb0RmfVj?usp=sharing">Micro-Syllabus</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1NDWzL_SoWjStzFAMpYn5JhUGXH7q0zLi?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1AfduqpaHXffjQRpMo83OJGPB8Ou89MoF?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link3">
+                        <h6 class="pt-4">Sem-3 csit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1EQlOnTeziNVAP2flxVrCRIcjJOAiDNEP?usp=sharing">Books</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1FDfbcZpZ1jNFFnrbKpUiHdzGSETUcae_?usp=sharing">Micro-Syllabus</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1tsbkXQSga_fbmTHkRyc17TTcPnUTfX9w?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1IryPjY-0BKhvom78hdAtbrx5hYmbCr1Z?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link4">
+                        <h6 class="pt-4">Sem-4 csit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1rNEWOrFP86XqTAyGHB2pU_zTFbDkBsQT?usp=sharing">Books</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/13uyAQ_6uyD1jSrUrcuTL0jXkbC4Dv2T4?usp=sharing">Micro-Syllabus</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1X6AmBzge99acuux0b2s2W7JFDrRnffns?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1FD_yF0iOePpk0Ec-mbB0Jae0m5pcU8Mo?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link5">
+                        <h6 class="pt-4">Sem-5 csit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1eNTn_IK38QrYPZL5mV_ItoqdNUhd1FJu?usp=sharing">Books</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1gQeupIfUyPndFnqp5N4RXjaCtsUiohit?usp=sharing">Micro-Syllabus</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1prOSRNmTSlEkAA9XXSkYC938siUk09ow?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/172DOzEOvv2rMDFiSTyNQSCKxHNR8mp_a?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link6">
+                        <h6 class="pt-4">Sem-6 csit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1QydD8A3RX4Whpg6ha_vA5_do6z8pdrgh?usp=sharing">Books</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1pYwdt8f9_pxIRiQfOQt8ZeBd2jfbMwCZ?usp=sharing">Micro-Syllabus</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1bVW-76mcQcVWopupFlIH4fdFLdJUroZd?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1F7iactW3YNRXE49uPTXGA-NbKlfNw9Rh?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link7">
+                        <h6 class="pt-4"></h6>
+                        <p>Comming Soon for more detail contact Roshan Bist.</p>                    </div>
+                    <div id="link8">
+                        <h6 class="pt-4"></h6>
+                        <p>Comming Soon for more detail contact Roshan Bist.</p>  
+                   </div>
+                </div>
+                <div id="beitLinks">
+                    <div id="link11">
+                        <h6 class="pt-4">Sem-1 beit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1-E2RmkRGvDMfaB6WU9NDcrfxZXgSGcl4?usp=sharing">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1-E2RmkRGvDMfaB6WU9NDcrfxZXgSGcl4?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link22">
+                        <h6 class="pt-4">Sem-2 beit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1ZtqMqGqAo0K1-EPLt89dP187iMptY_Xg?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link33">
+                        <h6 class="pt-4">Sem-3 beit Links Generated</h6>
+                        <a href="">Books</a>
+                        <br>
+                        <a href="">Micro-Syllabus</a>
+                        <br>
+                        <a href="">Old Questions</a>
+                        <br>
+                        <a href="https://drive.google.com/drive/folders/1fvDSvJPFchtW1_2JFZuWfap0mGBaKy19?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link44">
+                        <h6 class="pt-4">Sem-4 beit Links Generated</h6>
+                        <a href="https://drive.google.com/drive/folders/1RIeL4neHU5bMABBl1ybRXSAN1IoYKZDi?usp=sharing">Handwritten-Notes</a>
+                    </div>
+                    <div id="link55">
+                        <h6 class="pt-4">Sem-5 beit Links Generated</h6>
+                        <a href="">Books</a>
+                        <br>
+                        <a href="">Micro-Syllabus</a>
+                        <br>
+                        <a href="">Old Questions</a>
+                        <br>
+                        <a href="">Handwritten-Notes</a>
+                    </div>
+                    <div id="link66">
+                        <h6 class="pt-4">Sem-6 beit Links Generated</h6>
+                        <a href="">Books</a>
+                        <br>
+                        <a href="">Micro-Syllabus</a>
+                        <br>
+                        <a href="">Old Questions</a>
+                        <br>
+                        <a href="">Handwritten-Notes</a>
+                    </div>
+                    <div id="link77">
+                        <h6 class="pt-4"></h6>
+                        <p>Comming Soon for more detail contact Roshan Bist.</p>    
+                    </div>
+                    <div id="link88">
+                        <h6 class="pt-4"></h6>
+                            <p>Comming Soon for more detail contact Roshan Bist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== Main footer starts===========
+    ========================================= -->
+    <section onclick="closeNav()">
+        <div class="text-white bg-dark">
+            <div class="container-fluid ftr pt-4 pb-4">
+                <div class="row foot pl-lg-5 pr-lg-5 p-sm-3">
+                    <div class="col-lg-3 col-md-6 col-6 pt-2">
+                        <img src="images/logo2.png" style="height:80px; width: 70px;" class="mb-4">
+                        <p class="textfot">Helloprogrammers is the best choice for IT related related study materials based on revised
+                        micro-syllabus,Recent news and notice updates and more.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pt-5 pl-lg-5">
+                        <h3>Useful Links</h3>
+                        <div class="mt-3 lnks" id="footerLinks">
+                            <li>
+                                <a href="index.html" class="text-decoration-none text-white">  <span class="lnk">Home</span></a>
+                                <br>
+                                <a href="index.html#gotoabout" class="text-decoration-none text-white"> <span class="lnk">About Us</span></a>
+                                <br>
+                                <a href="csit.html" class="text-decoration-none text-white">   <span class="lnk">CSIT</span></a>
+                                <br>
+                                <a href="beit.html" class="text-decoration-none text-white">  <span class="lnk">BEIT</span></a>
+                                <br>
+                                <a href="index.html#myservices"class="text-decoration-none text-white">  <span class="lnk">Services</span></a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6 pt-5">
+                        <h3>Contact Us</h3>
+                        <div>
+                            <div  class="p-2" id="phn">
+                                <div class="hd1">  <i class="fas fa-phone-alt mb-2"></i> <span>Phone:</span>   </div>
+                                <a href="tel:9806470952" class="text-white text-decoration-none"> <span class="footerPhHover">
+                                For CSIT: 9806470952</span>
+                            </a>
+                            <br>
+                            <a href="tel:9806470952" class="text-white text-decoration-none"> <span class="footerPhHover">
+                            For BEIT: 9866100816</span></a>
+                        </div>
+                        
+                        <div class="fsmedia">
+                            <a href=""><img src="images/fb.jpg"></a>
+                            <a href=""><img src="images/ytub.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6 pt-5">
+                    <h3>Our Goal</h3>
+                    <p class="textfot mt-3">All the essential notes of CSIT, BEIT, BIT and BE.Soft for Nepalese IT students with lots of news and information regarding new Technology...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>&#169; All Rights Reserved by Helloprogrammers.</footer>
+<script type="text/javascript" src="index.js"></script> <!-- external js file included -->
+
+<script type="text/javascript">
+var tx,tx2;
+function corseSelect(){
+var course=document.getElementById('courseS');
+var text=course.options[course.selectedIndex].text;
+tx=text;
+}
+function semSelect(){
+var sem=document.getElementById('semS');
+var text2=sem.options[sem.selectedIndex].text;
+tx2=text2;
+}
+function generateLinks(){
+//===========================================================
+// for to eliminate csit when beit opened and vice-versa
+//==========================================================
+if(tx==="BE.IT"){
+document.getElementById('csitLinks').style.display="none";
+document.getElementById('beitLinks').style.display="block";
+}
+if(tx==="Bsc.CSIT"){
+document.getElementById('beitLinks').style.display="none";
+document.getElementById('csitLinks').style.display="block";
+}
+//===========================================================
+// for to generate csit links
+//==========================================================
+if((tx==="Bsc.CSIT")&&(tx2==="First")){
+document.getElementById('link1').style.display="block";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Second")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="block";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Third")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="block";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Fourth")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="block";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Fifth")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="block";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Sixth")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="block";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Seventh")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="block";
+document.getElementById('link8').style.display="none";
+}
+if((tx==="Bsc.CSIT")&&(tx2==="Eighth")){
+document.getElementById('link1').style.display="none";
+document.getElementById('link2').style.display="none";
+document.getElementById('link3').style.display="none";
+document.getElementById('link4').style.display="none";
+document.getElementById('link5').style.display="none";
+document.getElementById('link6').style.display="none";
+document.getElementById('link7').style.display="none";
+document.getElementById('link8').style.display="block";
+}
+// ========================For generating Beit links===============
+// ====================================================
+if((tx==="BE.IT")&&(tx2==="First")){
+document.getElementById('link11').style.display="block";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Second")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="block";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Third")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="block";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Fourth")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="block";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Fifth")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="block";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Sixth")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="block";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Seventh")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="block";
+document.getElementById('link88').style.display="none";
+}
+if((tx==="BE.IT")&&(tx2==="Eighth")){
+document.getElementById('link11').style.display="none";
+document.getElementById('link22').style.display="none";
+document.getElementById('link33').style.display="none";
+document.getElementById('link44').style.display="none";
+document.getElementById('link55').style.display="none";
+document.getElementById('link66').style.display="none";
+document.getElementById('link77').style.display="none";
+document.getElementById('link88').style.display="block";
+}
+}
+</script>
+</body>
+</html>

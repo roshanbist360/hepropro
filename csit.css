@@ -1,0 +1,91 @@
+.hdr{
+text-align: center;
+}
+.csit-head-img,.select-sem,.txt{
+display: flex;
+justify-content: center;
+}
+.csit-head-img img{
+  height: 100%;
+  width: 100%;
+}
+.content4 p,.txt0{
+text-align: center;
+font-size: 22px;
+padding: 20px;
+font-weight: bold;
+}
+.txt10{
+text-align: center;
+font-size: 22px;
+padding: 20px;
+font-weight: bold;
+color: #004499;
+}
+.sem-slt{
+font-size: 16px;
+color: #fff;
+font-weight: bold;
+width: 220px;
+padding: 4px 15px;
+background-color: #0055aa;
+display: flex;
+justify-content: center;
+}
+.content5{
+background: #fff;
+padding: 20px 0px;
+margin: 20px 0px;
+font-family: sans-serif;
+}
+.hdr{
+text-decoration: underline;
+}
+.hdr2{
+font-weight: bold;
+font-size: 22px;
+}
+.hdr3{
+font-weight: bold;
+font-size: 25px;
+}
+.joblist{
+padding-left: 40px;
+}
+table{
+border: 2px solid black;
+width: 40%;
+margin:20px 40px;
+}
+td,th{
+border: 1px solid black;
+}
+.table12{
+display: flex;
+margin: 40px;
+text-align: center;
+justify-content: center;
+}
+.table12 h2{
+border: 2px solid blue;
+}
+.contact-me-4-queries{
+text-align: center;
+padding-top:20px;
+}
+
+
+@media only screen and (max-width:800px){
+.table12{
+flex-direction: column;
+}
+}
+
+
+@media only screen and (max-width:520px){
+  
+table{
+width: 100%;
+margin:20px 0px;
+}
+}

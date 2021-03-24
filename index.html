@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Hello Programmers</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		
+		<!--   CSS file included -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- cdn for fontawesome -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		
+		<!-- Using flat icons -->
+		<link rel="stylesheet" type="text/css" href="font/flaticon.css">
+		<!-- FAVICONS ICON -->
+		<link rel="icon" type="image/png" href="images/logo2.png"/>
+		<!-- jquery cdn -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!-- for owl carasoul -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+	</head>
+	<body>
+		<!-- /*=================Navbar Section Started===============
+		======================================================*/ -->
+		<nav>
+			<div class="logo">
+				<img src="images/logo2.png">
+			</div>
+			
+			<div class="nav-menus">
+				<ul>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#myservices">Services</a></li>
+					<li><a href="#gotoabout">About Us</a></li>					
+					<li><a href="csit.html">Bsc.CSIT</a></li>
+					<li><a href="beit.html">BE.IT</a></li>
+				    <li><a href="#team">Team</a></li>
+				    <li id="bookimg"><img src="images/books.png"></li>
+				    <li id="design"><!-- this is for just design at last of nav --></li>
+			</ul>
+		</div>
+		
+		<!-- for responsive side nav menu -->
+		<div class="sidenav-menus" id="sidenav">
+			<span onclick="closeNav()">&#9747;</span> <!-- Close or sross sign -->
+			<div class="logo2">
+				<img src="images/logo2.png">
+			</div>
+			
+			<ul>
+				<li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="#myservices"><i class="fas fa-hands-helping"></i> Services</a></li>
+				<li><a href="#gotoabout"><i class="fas fa-address-card"></i> About Us</a></li>
+				<li><a href="#"><i class="fas fa-book"></i> IT-Courses <i class="fas fa-caret-down" id="arodown"></></i> </a>
+				<ul>
+					<li><a href="csit.html">Bsc.CSIT</a></li>
+					<li><a href="#">BE.IT</a></li>
+				</ul>
+			</li>
+			<li><a href="#team"><i class="fas fa-users"></i> Team</a></li>
+		</ul>
+		<div class="sidicn">
+			<a href="https://www.facebook.com/helloprogrammers/" target="_blank"><i class="fab fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UC_fm-Kx9DAmCu4lTgrI8FJg" target="_blank"><i class="fab fa-youtube"></i></a>
+		</div>
+	</div>
+	<span id="bars" onclick="openNav()">&#9776;</span> <!-- for side bars to show menu on click -->
+</nav>
+<!-- /*=================Navbar Section Ends===============
+===================Homepage Image section starts=================*/ -->
+<section class="home" onclick="closeNav()">
+	<div class="home-bg">
+		<!-- this div is to set background using css and maintain opacity -->
+	</div>
+	<div class="home-text">
+		<h3 class="mb-2">Hello Programmers</h3>
+		<p>
+			This website is designed for all IT students to provide best notes based on revised syllabus and other study materials.We are mainly active on facebook page stay connected.
+		</p>
+		<div class="so-med">
+			<div class="facebook">
+				<button class="sbtn" id="fb-btn"> <a href="https://www.facebook.com/helloprogrammers/" target="_blank">Facebook</a> </button>
+			</div>
+			<div class="youtube">
+				<button class="sbtn" id="ytub-btn"> <a href="https://www.youtube.com/channel/UC_fm-Kx9DAmCu4lTgrI8FJg" target="_blank">Youtube</a> </button>
+			</div>
+		</div>
+
+	</div>
+	<div class="soc-media text-white">
+		<h5>Stay Connected On :</h5>
+		<div class="facebook">
+			<button class="sbtn" id="fb-btn"> <a href="https://www.facebook.com/helloprogrammers/" target="_blank">Facebook</a> </button>
+		</div>
+		<div class="youtube">
+			<button class="sbtn" id="ytub-btn"> <a href="https://www.youtube.com/channel/UC_fm-Kx9DAmCu4lTgrI8FJg" target="_blank">Youtube</a> </button>
+		</div>
+	</div>
+	       <div id="myservices"></div><!-- This div is not a part of this section it is created Only for to scroll perfectly upto services when clicked on services of nav -->
+</section>
+
+<!--  =============================================================
+=============Note download section services starts==================== -->
+
+<section class="py-5 servsec" onclick="closeNav()">
+	<h3 class="text-center text-white mt-4">A Non-Profit Organization</h3>
+	<p class="text-center text-white pl-3 pr-3 tx1">Now stay connected with helloprogrammers to learn coding, to become teacher and to download best handwritten IT notes.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 mt-4 mb-4 col-sm-12 text-center services">
+				<div class="card pt-4 mx-3" id="first">
+					<div>
+						<img src="images/degree.png">
+					</div>
+					<h4>Learn Programming</h4>
+					<a href="#"><p>Comming soon... <!-- <i class="fas fa-angle-right"></i> --></p></a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 mt-4 mb-4 col-sm-12 text-center text-center services">
+				<div class="card pt-4 mx-3" id="second">
+					<div>
+						<img src="images/teacher.png">
+					</div>
+					<h4>Become Teacher</h4>
+					<a href="#"><p>Comming soon... <!-- <i class="fas fa-angle-right"></i> --></p></a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 mt-4 mb-4 col-sm-12 text-center text-center services">
+				<div class="card pt-4 mx-3" id="third">
+					<div>
+						<img src="images/note.png">
+					</div>
+					<h4>Download Notes</h4>
+					<a href="download.html"><p>Download <i class="fas fa-angle-right"></i></p></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	     <div id="gotoabout"></div><!-- This div is not a part of this section it is created Only for to scroll perfectly upto about us when clicked on about us of nav -->
+</section>
+<!--  ==========About Us Section starts===========
+========================================= -->
+<section id="about" onclick="closeNav()">
+	<div class="container">
+		<header class="section-header text-center">
+			<h3>About Us</h3>
+			<p>We are the group of IT students of 2nd Year studying in Nepal who wills to provide all essential stuffs to IT students of Nepal for better study.</p>
+		</header>
+		<div class="row about-container">
+			<div class="col-lg-6 content order-lg-1 order-2">
+				<p>
+					We are delightly grateful and happy to share our knowledge and course stuffs to our friends studying IT in Nepal. We want the students of IT to be more creative and straightforward so we also provides example of codes of different topic and challenge
+					you for other questions.
+				</p>
+				<div class="icon-box">
+					<div class="icon"><i class="fa fa-universal-access"></i></div>
+					<h4 class="title"><a href="#team">Interactive Team</a></h4>
+					<p class="description">We are very interactive guys from different part of Nepal so you can share any questions or thought related to programming and other IT fields.</p>
+				</div>
+				<div class="icon-box" data-wow-delay="0.2s">
+					<div class="icon"><i class="fa fa-tasks"></i></div>
+					<h4 class="title"><a href="#why-us">Updated Up-To-DAte</a></h4>
+					<p class="description">Our team is very updated so you can see very latest news and information on technology and yaa... we will do hard to provide coding sample too.</p>
+				</div>
+				<div class="icon-box" data-wow-delay="0.4s">
+					<div class="icon"><i class="fa fa-users"></i></div>
+					<h4 class="title"><a href="#services">Hardworking Team</a></h4>
+					<p class="description">By a hardwork and teamwork, we have made this website a lot for new IT students who wants to dive in programming era.</p>
+				</div>
+			</div>
+			<div class="col-lg-6 background order-lg-2 order-1" style="margin-top: -8rem;">
+				<img src="images/about-img.svg" class="img-fluid" alt="" style="margin-top: 10rem;">
+			</div>
+		</div>
+	</div>
+	<div id="team"></div><!-- This div is not a part of this section it is created Only for to scroll perfectly upto team section when clicked on team of nav -->
+</section>
+<!--  ========== Our Team Section starts===========
+========================================= -->
+<section class="ourTeam py-5" onclick="closeNav()">
+	<div class="text-center text-white teammm px-4">
+		<h3>Our Team</h3>
+		<p class="tx1">We are IT students of 2075 batch.We three are the founders of hello programmers.</p>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 my-2 col-sm-12 text-center team">
+				<div class="pt-4 mx-3" id="first">
+					<div class="img-n-lnk">
+						<div class="fix-links mx-auto">
+							<img src="images/roshan.jpg">
+							<div class="so-links text-center">
+								<a href="https://www.facebook.com/roshanbist.roshanbist.3"target="_blank"> <i class="fab fa-facebook fa-2x"></i> </a>
+								<a href="https://twitter.com/bist360" target="_blank">  <i class="fab fa-twitter fa-2x"></i> </a>
+								<a href="https://www.linkedin.com/in/roshan-bist" target="_blank"> <i class="fab fa-linkedin-in fa-2x"></i> </a>
+								<br><p> Roshan Bist (Bsc.CSIT-TU) </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 col-sm-12 text-center text-center team">
+				<div class="pt-4 mx-3" id="second">
+					<div class="img-n-lnk">
+						<div class="fix-links mx-auto">
+							<img src="images/pawan.jpg">
+							<div class="so-links text-center">
+								<a href="https://www.facebook.com/roshanbist.roshanbist.3"target="_blank"> <i class="fab fa-facebook fa-2x"></i> </a>
+								<a href="https://twitter.com/bist360" target="_blank">  <i class="fab fa-twitter fa-2x"></i> </a>
+								<a href="https://www.linkedin.com/in/roshan-bist" target="_blank"> <i class="fab fa-linkedin-in fa-2x"></i> </a>
+								<br><p> Pawan Kharel (BE.IT-PU) </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 my-2 col-sm-12 text-center text-center team">
+				<div class="pt-4 mx-3" id="third">
+					<div class="img-n-lnk">
+						<div class="fix-links mx-auto">
+							<img src="images/pm.jpg">
+							<div class="so-links text-center">
+								<a href="https://www.facebook.com/roshanbist.roshanbist.3"target="_blank"> <i class="fab fa-facebook fa-2x"></i> </a>
+								<a href="https://twitter.com/bist360" target="_blank">  <i class="fab fa-twitter fa-2x"></i> </a>
+								<a href="https://www.linkedin.com/in/roshan-bist" target="_blank"> <i class="fab fa-linkedin-in fa-2x"></i> </a>
+								<br><p> Prabin Bhusal (BE.IT-PU) </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--  ==========Testimonial section starts===========
+========================================= -->
+<section class="py-5 testimonial" onclick="closeNav()">
+	<header class="section-header text-center px-2">
+		<h3>Testimonials <br><i class="fas fa-quote-left fa-2x"></i></h3>
+	</header>
+	<div class="owl-carousel owl-theme">
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/subash.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Subash Poudel</h4>
+					<span>Patan Multiple Campus</span>
+					<p>I was wonderning what to read and how to read, then I found helloprogrammers the best one.Iam following helloprogrammers since my first-sem.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/karishma.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Karishma Bogati</h4>
+					<span>Everest Engineering College</span>
+					<p>Thanks for your handwritten notes which match our syllabus thus it is very easy to prepare myself for my board exams.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/bipin.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Bipin GC</h4>
+					<span>Butwal Multiple Campus,Butwal</span>
+					<p>Helloprogrammers Team ,you are the best because you brought out the best handwritten notes for us..</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/ruby.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Rubi Xetri(Rabina Karki)</h4>
+					<span>Padmakanya Multiple Campus</span>
+					<p>Helloprogrammers Team is the best teacher from the heart which makes everything easy to understand and memorise.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/srishti.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Srishti Gyawali</h4>
+					<span>Butwal Multiple Campus,Butwal</span>
+					<p>When anyone asks about what to read and how to read then our classroom makes noise 
+					that helloprogrammers is the best and only one.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/hiramani.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Hiramani Dahal</h4>
+					<span>Mahendra Multiple Campus,Nepaljung</span>
+					<p>We are blessed that we got helloprogrammers as our Helping friend for our study related materials and recent news and updates.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/mahesh.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Mahesh Nath</h4>
+					<span>SNSC,Mahendranagar</span>
+					<p>I found helloprogrammers best of best among all handwritten notes, helloprogrammers team as co-operative and friendly.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/bigyan.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Bigyan Luitel</h4>
+					<span>Everest Engineering College</span>
+					<p>I am very thankful to my friends Pawan and Prabin for best handwritten notes.Because of their hardwork now I am able to access whole notes of my semester.</p>
+				</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="sub-itm">
+				<div class="car-img text-center">
+					<img src="images/adesh.jpg">
+				</div>
+				<div class="car-content text-center">
+					<h4>Adesh Pokhrel</h4>
+					<span>Madan Bhandari Memorial College</span>
+					<p>Thank you helloprogrammers for working hard on handwritten notes.We are getting best notes and best way to prepare for board exams.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--  ========== Main footer starts===========
+========================================= -->
+<section onclick="closeNav()">
+	<div class="text-white bg-dark">
+		<div class="container-fluid ftr pt-4 pb-4">
+			<div class="row foot pl-lg-5 pr-lg-5 p-sm-3">
+				<div class="col-lg-3 col-md-6 col-6 pt-2">
+					<img src="images/logo2.png" style="height:80px; width: 70px;" class="mb-4">
+					<p class="textfot">Helloprogrammers is the best choice for IT related related study materials based on revised
+					micro-syllabus,Recent news and notice updates and more.</p>
+				</div>
+				<div class="col-lg-3 col-md-6 col-6 pt-5 pl-lg-5">
+					<h3>Useful Links</h3>
+					<div class="mt-3 lnks" id="footerLinks">
+						<li>
+							<a href="index.html" class="text-decoration-none text-white">  <span class="lnk">Home</span></a>
+							<br>
+							<a href="#gotoabout" class="text-decoration-none text-white"> <span class="lnk">About Us</span></a>
+							<br>
+							<a href="csit.html" class="text-decoration-none text-white">   <span class="lnk">CSIT</span></a>
+							<br>
+							<a href="#" class="text-decoration-none text-white">  <span class="lnk">BEIT</span></a>
+							<br>
+							<a href="#myservices"class="text-decoration-none text-white">  <span class="lnk">Services</span></a>
+						</li>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-6 pt-5">
+					<h3>Contact Us</h3>
+					<div>
+						<div  class="p-2" id="phn">
+							<div class="hd1">  <i class="fas fa-phone-alt mb-2"></i> <span>Phone:</span>   </div>
+							<a href="tel:9806470952" class="text-white text-decoration-none"> <span class="footerPhHover">
+							For CSIT: 9806470952</span>
+						</a>
+						<br>
+						<a href="tel:9806470952" class="text-white text-decoration-none"> <span class="footerPhHover">
+						For BEIT: 9866100816</span></a>
+					</div>
+					
+					<div class="fsmedia">
+						<a href="https://www.facebook.com/helloprogrammers/"><img src="images/fb.jpg"></a>
+						<a href="https://www.youtube.com/channel/UC_fm-Kx9DAmCu4lTgrI8FJg"><img src="images/ytub.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-6 pt-5">
+				<h3>Our Goal</h3>
+				<p class="textfot mt-3">All the essential notes of CSIT, BEIT, BIT and BE.Soft for Nepalese IT students with lots of news and information regarding new Technology...</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<footer>&#169; All Rights Reserved by Helloprogrammers.</footer>
+<script type="text/javascript" src="index.js"></script> <!-- external js file included -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<!-- For auto slider/carasoul cdn js owl carosoul -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script type="text/javascript">
+//========Jquery  plugins=============
+// Testimonials carousel (uses the Owl Carousel library)
+$('.owl-carousel').owlCarousel({
+loop:true,
+margin:10,
+nav:false,
+dots:true,
+autoplay:true,
+autoplayTimeout: 5000,
+number:1,
+responsive:{
+0:{
+items:1
+},
+600:{
+items:1
+},
+1000:{
+items:2
+}
+}
+})
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".nav-menus ul li a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (500) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+</script>
+</body>
+</html>

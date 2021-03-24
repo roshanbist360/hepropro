@@ -1,0 +1,604 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+font-size: 16px;
+}
+body{
+background: #fff;
+}
+/*=================Navbar Section Started===============
+======================================================*/
+nav{
+width: 100%;
+height: 80px;
+position: fixed;
+background: #fff;
+z-index: 10;
+box-shadow: 0.5px 0.5px 5px #555;
+}
+nav .logo img{
+height: 75px;
+width: 62px;
+margin-left: 40px;
+padding-top: 5px;
+}
+.nav-menus{
+position: absolute;
+top: 0px;
+right: 0px;
+}
+.nav-menus ul{
+display: inline-flex;
+cursor: pointer;
+}
+.nav-menus ul li{
+list-style: none;
+margin: 35px 5px;
+font-size: 1.25rem;
+font-weight: 500;
+}
+.nav-menus ul li a{
+padding:5px 8px;
+color: #007889;
+}
+.nav-menus ul li a:hover{
+text-decoration: none;
+opacity: 0.75;
+}
+.nav-menus ul #bookimg img{
+margin-top: -25px;
+padding: 0px 10px;
+}
+#design{
+margin-top: 0px;
+margin-right: -0.25px;
+width: 50px;
+height: 80px;
+background: #007889;
+clip-path: polygon(41% 0, 100% 0%, 100% 100%, 41% 100%, 0% 50%);
+}
+.nav-menus ul li ul{
+display: block;
+background: #fff;
+color: #004466;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+display: none;
+box-shadow: 1px 1px 4px #004466;
+margin-top: 14px;
+padding: 5px;
+}
+.nav-menus ul li:hover > ul{
+display: block;
+}
+.nav-menus ul li ul li{
+font-size: 1.05rem;
+margin: 5px;
+}
+.nav-menus ul li.active a{  /*background changing on clicked page*/
+text-decoration: none;
+background-image: linear-gradient(to right top, #007889, #007ab2, #3f72cf, #a457c8, #eb1296);
+color: #fff;
+/*color: #f5281d;*/
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+font-weight: 400;
+}
+
+/*below css is for responsive side menu for medium and small devices*/
+.sidenav-menus{
+height: 100vh;
+width: 0px;
+background: #095c75;
+display: none;
+position: absolute;
+top: 0px;
+right: 0px;
+z-index: 25;
+padding-top: 15px;
+transition: 0.3s;
+}
+.sidenav-menus span{ /*cross close symbol*/
+margin-left:15px;
+padding: 0px 5px;
+color: #ff0d15;
+font-size: 1.4rem;
+font-weight: bolder;
+cursor: pointer;
+text-shadow: 1px 1px 1px #222, -1px -1px 1px #888;
+}
+.sidenav-menus .logo2{
+height: 65px;
+width: 55px;
+position: absolute;
+top: 10px;
+left: 55px;
+box-shadow: 1px 1px 2px #fff, -1px -1px 2px #000;
+}
+.sidenav-menus .logo2 img{
+height: 65px;
+width: 55px;
+padding: 6px;
+position: absolute;
+top: 0;
+}
+.sidenav-menus ul{
+margin:45px 30px;
+}
+.sidenav-menus ul li{
+list-style: none;
+color: #fff;
+margin-top: 20px;
+}
+.sidenav-menus ul li i{
+text-shadow: 0.5px 0.5px 1px #222, -0.5px -0.5px 0.5px #fff;
+color: #53D8FB;
+}
+.sidenav-menus ul li a{
+color: #fff;
+font-size: 1.1rem;
+}
+.sidenav-menus ul li a:hover{
+text-decoration: none;
+text-shadow: 1px 1px 2px #222;
+}
+.sidenav-menus ul li ul{
+margin: 0px 0px 0px 25px;
+color: #fff;
+display: none;
+}
+.sidenav-menus ul li ul a{
+font-size: 1rem;
+}
+.sidenav-menus ul li:hover > ul{
+display: block;
+}
+#arodown{ /*arrow down after it-courses on responsive mobile view*/
+color:#fff;
+}
+#bars{
+position: absolute;
+top: 27px;
+right: 35px;
+color: #0788b0;
+font-size: 1.4rem;
+cursor: pointer;
+display: none;
+text-shadow: 0.75px 0.75px 1px #222;
+padding: 0px 5px;
+background: #eee;
+border-radius: 2px;
+}
+.sidicn{ /*facebook and youtube icons on opening side bar*/
+margin:0px 35px;
+}
+.sidicn a{
+color: #fff;
+margin: 5px;
+padding:15px 10px 10px 10px;
+border-radius: 5px;
+box-shadow: 1px 1px 2px #000, -1px -1px 2px #fff;
+}
+.sidicn a i{
+font-size: 1.8rem;
+}
+/*=================Navbar Section Ends===============
+===================Homepage Image section starts=================*/
+.home{
+background: #000;
+z-index: -1;
+}
+.home-bg{
+height: 625px;
+width: 100%;
+z-index: 1;
+background-image: url("images/home.jpg");
+background-size: 100%;
+opacity: 0.4;
+position: relative;
+}
+
+#myservices{ /*Only for to scroll perfectly upto services when clicked on services of nav*/
+    position: absolute;
+    bottom: 20%;
+    left: 0px;
+}
+.home-text{
+position: absolute;
+top: 200px;
+left:0px;
+width: 45%;
+margin:0px 20px;
+color: #fff;
+z-index: 2;
+}
+.home-text h3{
+padding-right: 40px;
+}
+.so-med{
+display: none;
+}
+.soc-media{
+position: absolute;
+top: 100px;
+right:0px;
+width: 280px;
+text-align: center;
+z-index: 2;
+}
+.sbtn{
+padding: 5px 15px;
+width: 100px;
+margin: 10px;
+border: 0px solid #fff;
+box-shadow: 1px 1px 1px #fff;
+}
+#fb-btn{
+background: #1b56f7/*007889*/;
+}
+#ytub-btn{
+background: #fa1b22/*007889*/;
+}
+.sbtn:hover{
+opacity: 0.8;
+}
+.sbtn a{
+color: #fff;
+}
+.sbtn a:hover{
+text-decoration: none;
+}
+/*=============================================================
+=============Note download section services starts====================*/
+.services{
+padding: 5px;
+}
+.servsec{
+background: #007889;
+}
+.services h4{
+color: #fff;
+margin-top: 10px;
+}
+.services p{
+font-size: 1.1rem;
+font-weight: 600;
+}
+.servsec .tx1{
+font-weight: 600;
+}
+.card{
+background: #66C3FF;
+padding: 20px;
+box-shadow: 1px 1px 8px #000;
+}
+.card a{
+height: 35px;
+padding-top: 3px;
+text-decoration: none;
+color: #2721db;
+}
+.card:hover{
+box-shadow: 1px 1px 2px #000;
+transform: scale(1.05);
+}
+.card a:hover{
+text-decoration: underline;
+}
+/* About Us Section
+--------------------------------*/
+#about {
+background: #fff;
+padding: 60px 0;
+}
+#about header p{
+font-weight: 600;
+}
+#about .about-container .background {
+margin: 20px 0;
+}
+#about .about-container .content {
+background: #fff;
+}
+#about .about-container .title {
+color: #333;
+font-weight: 700;
+font-size: 32px;
+}
+#about .about-container p {
+line-height: 26px;
+}
+#about .about-container p:last-child {
+margin-bottom: 0;
+}
+#about .about-container .icon-box {
+background: #fff;
+background-size: cover;
+padding: 0 0 30px 0;
+}
+#about .about-container .icon-box .icon {
+float: left;
+background: #fff;
+width: 64px;
+height: 64px;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+text-align: center;
+border-radius: 50%;
+border: 2px solid #007bff;
+transition: all 0.3s ease-in-out;
+}
+#about .about-container .icon-box .icon i {
+color: #007bff;
+font-size: 24px;
+}
+#about .about-container .icon-box:hover .icon {
+background: #007bff;
+}
+#about .about-container .icon-box:hover .icon i {
+color: #fff;
+}
+#about .about-container .icon-box .title {
+margin-left: 80px;
+font-weight: 600;
+margin-bottom: 5px;
+font-size: 18px;
+}
+#about .about-container .icon-box .title a {
+color: #283d50;
+}
+#about .about-container .icon-box .description {
+margin-left: 80px;
+line-height: 24px;
+font-size: 14px;
+}
+#about .about-extra {
+padding-top: 60px;
+}
+#about .about-extra h4 {
+font-weight: 600;
+font-size: 24px;
+}
+/*=============================================================
+=============Note download section services starts====================*/
+.ourTeam{
+background:#007889;
+}
+.teammm .tx1{
+font-weight: 600;
+}
+.team img{
+height: 350px;
+width: 270px;
+border: 3px solid #007889;
+border-radius: 10px;
+box-shadow: 1px 1px 5px #000,-1px -1px 2px #ddd;
+}
+.fix-links{
+height: 350px;
+width: 260px;
+position: relative;
+}
+.img-n-lnk{
+text-align: center;
+}
+.img-n-lnk p{
+font-weight: 600;
+margin-top: 10px;
+color: #fff;
+}
+.so-links{
+width: 267px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+background: #007889;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius:10px;
+}
+.so-links i{
+margin-top: 10px;
+margin-left: 10px;
+color: #fff;
+padding: 5px;
+font-size: 1.5rem;
+border-radius: 100%;
+background: #fff;
+color: #0588f2;
+}
+.so-links i:hover{
+color: #2668ed;
+}
+/*=============================================================
+=============Testimonial section starts====================*/
+.testimonial{
+background: #d9effc;
+}
+.section-header p{
+font-weight: 600;
+}
+.item{
+/*border: 2px solid red;*/
+}
+.sub-itm{
+display: inline-flex;
+}
+.car-img{
+height:180px;
+width: 160px;
+padding: 10px;
+margin-left: 40px;
+border-radius: 100%;
+}
+.car-content{
+width: 80%;
+margin:20px 0px;
+}
+.car-img img{
+height: 150px;
+width: 140px;
+border-radius: 100%;
+}
+.car-content span{
+font-weight: 600;
+text-decoration: underline;
+}
+.car-content p{
+text-align: left;
+padding: 0px 40px;
+}
+/*======================Footer section starts=============================*/
+.foot h3{
+color: #0392a6;
+}
+.textfot, .footerPhHover{
+font-size: 0.92rem;
+}
+#phn a span{
+margin-top: 10px;
+}
+#phn i, .hd1{
+color: #0392a6;
+}
+.arrowHover:hover{
+color: #aaaaaa;
+}
+.footerPhHover:hover{
+color: #aaaaaa;
+}
+#footerLinks li{
+list-style: none;
+}
+.fsmedia img{
+height: 45px;
+width: 45px;
+margin: 6px;
+margin-bottom: 10px;
+border-radius: 100%;
+}
+.fsmedia img:hover{
+opacity: 0.7;
+}
+.lnks span:hover{
+color: #aaaaaa;
+}
+#aboveFooter1{
+background: #000;
+}
+#topBtn{  /*go to top button*/
+position: fixed;
+right: 0px;
+bottom: 20px;
+z-index: 50;
+display: none; /*when we are top do not show go to top button. show after certain scroll*/
+}
+footer{
+height: 60px;
+width: 100%;
+background: #4e5c66;
+color: #fff;
+text-align: center;
+padding-top: 18px;
+}
+/*===========Media Queries for Responsive Design===========
+=========================================================*/
+@media screen and (max-width: 920px) {
+/*Homepage*/
+.home-bg{
+background-size:100% 100%;
+}
+}
+@media screen and (max-width: 850px) {
+/*Navbar*/
+.nav-menus{
+display: none;
+}
+/*sidebar*/
+.sidenav-menus{
+display: block;
+}
+#bars{
+display: block;
+}
+}
+@media screen and (max-width: 748px) {
+/*navbar*/
+nav .logo img{
+margin-left: 30px;
+}
+/*homepage*/
+.home .home-text{
+width: 60%;
+}
+}
+@media screen and (max-width: 600px) {
+/*homepage*/
+.home-text{
+position: absolute;
+top: 200px;
+right:0px;
+margin:0px 20px;
+padding: 0px;
+}
+.home-text h3{
+width: 260px;
+padding: 0px;
+margin-top:25px;
+}
+
+.home-text p{
+width: 280px;
+}
+.soc-media{
+display: none;
+}
+.so-med{
+display: block;
+}
+/*testimonials*/
+.sub-itm{
+display: inline-block;
+}
+.car-content{
+width: 100%;
+margin: 10px 0px;
+padding: 0px 20px;
+}
+.car-img{
+margin-left: 25%;
+}
+.car-content p{
+padding: 0px 0px;
+}
+}
+@media screen and (max-width: 500px) {
+/*Homepage*/
+.home{
+height: 450px;
+}
+.home-bg{
+height: 450px;
+}
+.home-text{
+top: 100px;
+}
+}

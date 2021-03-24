@@ -1,0 +1,15 @@
+.download{
+padding-top: 80px;
+}
+.courseSelect select{
+border: 2px solid blue;
+}
+.semSelect select{
+border: 2px solid blue;
+}
+#link1,#link2,#link3,#link4,#link5,#link6,#link7,#link8{
+display: none;
+}
+#link11,#link22,#link33,#link44,#link55,#link66,#link77,#link88{
+display: none;
+}
