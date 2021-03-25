@@ -10,6 +10,7 @@ font-size: 16px;
 body{
 background: #fff;
 }
+
 /*=================Navbar Section Started===============
 ======================================================*/
 nav{
@@ -191,6 +192,7 @@ font-size: 1.8rem;
 .home{
 background: #000;
 z-index: -1;
+width: 100%;
 }
 .home-bg{
 height: 625px;
@@ -210,14 +212,15 @@ position: relative;
 .home-text{
 position: absolute;
 top: 200px;
-left:0px;
+left:20px;
 width: 45%;
 margin:0px 20px;
 color: #fff;
 z-index: 2;
 }
-.home-text h3{
+.home-text .hello{
 padding-right: 40px;
+font-size: 2.5rem;
 }
 .so-med{
 display: none;
@@ -523,6 +526,9 @@ padding-top: 18px;
 =========================================================*/
 @media screen and (max-width: 920px) {
 /*Homepage*/
+.home .home-text{
+width: 70%;
+}
 .home-bg{
 background-size:100% 100%;
 }
@@ -540,34 +546,22 @@ display: block;
 display: block;
 }
 }
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 768px) {
 /*navbar*/
 nav .logo img{
 margin-left: 30px;
 }
 /*homepage*/
 .home .home-text{
-width: 60%;
+width: 70%;
 }
 }
 @media screen and (max-width: 600px) {
 /*homepage*/
-.home-text{
-position: absolute;
-top: 200px;
-right:0px;
-margin:0px 20px;
-padding: 0px;
-}
-.home-text h3{
-width: 260px;
-padding: 0px;
-margin-top:25px;
+.home .home-text{
+width: 80%;
 }
 
-.home-text p{
-width: 280px;
-}
 .soc-media{
 display: none;
 }
@@ -598,7 +592,18 @@ height: 450px;
 .home-bg{
 height: 450px;
 }
+.home .home-text{
+    width: 85%;
+}
+.home .hellotxt{
+ width: 100%;
+}
 .home-text{
 top: 100px;
+left:10px;
+}
+.home-text .hello{
+width: 100%;
+font-size: 1.8rem;
 }
 }
